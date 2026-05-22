@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "auto-rename-cli"
+version = "0.1.0"
+description = "Tiny CLI to auto‑rename files, detect duplicates, and send Telegram notifications."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "TopherBot", email = "topherbot@proton.me"}]
+keywords = ["auto-rename", "duplicate-detection", "telegram", "github"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    "requests>=2.28",
+]
+
+[project.scripts]
+auto-rename-cli = "rename_tool:main"
